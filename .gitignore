@@ -1,0 +1,69 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test data and logs
+logs/
+*.log
+test_results/
+allure-results/
+allure-report/
+htmlcov/
+
+# Test data (keep structure but not actual data)
+Simple_Grocery_Store_Data/*.json
+!Simple_Grocery_Store_Data/.gitkeep
+
+# pytest cache
+.pytest_cache/
+.cache/
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Allure reports
+#allure-results/
+#allure-report/
+
+# Jenkins
+Jenkinsfile.backup
