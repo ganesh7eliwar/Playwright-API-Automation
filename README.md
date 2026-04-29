@@ -47,58 +47,40 @@ The framework is designed to ensure API reliability, validate response schemas, 
 
 ## 📁 Project Structure
 
-```
+```text
 Simple_Grocery_Store_API/
-├── requirements.txt                    # Python dependencies
-├── REVIEW_ANALYSIS.md                  # Framework review and recommendations
-├── Simple_Grocery_Store_Data/          # Test data storage
-│   ├── simple_grocery_store_all_client_details.json
-│   ├── simple_grocery_store_all_orders.json
-│   ├── simple_grocery_store_cart_details.json
-│   ├── simple_grocery_store_get_all_products.json
-│   ├── simple_grocery_store_get_cart_items.json
-│   ├── simple_grocery_store_last_added_item_to_cart.json
-│   ├── simple_grocery_store_last_created_cart_details.json
-│   ├── simple_grocery_store_last_created_cartId.txt
-│   ├── simple_grocery_store_last_created_client_details.json
-│   ├── simple_grocery_store_last_generated_access_token.json
-│   ├── simple_grocery_store_order_details.json
-│   ├── simple_grocery_store_product_details.json
-│   ├── simple_grocery_store_productId.txt
-│   ├── simple_grocery_store_single_order_details.json
-│   └── simple_grocery_store_status.json
-└── tests/
-    ├── __init__.py
-    ├── conftest.py                     # pytest fixtures and configuration
-    ├── test_add_item_to_cart.py
-    ├── test_create_a_new_order.py
-    ├── test_create_new_cart.py
-    ├── test_delete_an_order.py
-    ├── test_delete_item_from_cart.py
-    ├── test_get_a_cart.py
-    ├── test_get_a_product.py
-    ├── test_get_a_single_order.py
-    ├── test_get_all_orders.py
-    ├── test_get_all_products.py
-    ├── test_get_cart_items.py
-    ├── test_get_status.py
-    ├── test_modify_item_in_cart.py
-    ├── test_register_a_new_api_client.py
-    ├── test_replace_item_from_cart.py
-    ├── test_update_an_order.py
-    └── __pycache__/
+├── LICENSE                            # MIT license for repository use
+├── README.md                          # Project overview, setup, and documentation
+├── Jenkinsfile                        # CI/CD pipeline definition
+├── pytest.ini                         # pytest configuration and options
+├── requirements.txt                   # Python package dependencies
+├── Simple_Grocery_Store_Data/         # Persisted API data and test fixtures
+├── tests/                             # pytest test suite and fixtures
+├── utilities/                         # Reusable helper modules
+├── docs/                              # Optional project and test documentation
+├── reports/                           # Optional test reports and output artifacts
+└── src/                               # Optional source modules for helpers or clients
 ```
 
-### Key Directories Explained
+### Folder Details
 
-- **`tests/`**: Contains all test files and pytest configuration
-  - `conftest.py`: Defines fixtures for API context and test data management
-  - Individual test files follow naming pattern `test_<action>_<resource>.py`
+- **`LICENSE`**: MIT License file for the codebase and contributor use.
+- **`README.md`**: Project purpose, setup instructions, structure, and best practices.
+- **`Jenkinsfile`**: Build and automation pipeline definition for CI environments.
+- **`pytest.ini`**: Configuration for pytest behavior, markers, and reporting.
+- **`requirements.txt`**: Pinning of required Python packages and library versions.
+- **`Simple_Grocery_Store_Data/`**: Persistent API response files, payloads, IDs, and test artifacts.
+- **`tests/`**: End-to-end pytest coverage for API endpoints, test cases, and fixtures.
+- **`utilities/`**: Shared helper code and logger utilities for stable test execution.
+- **`docs/`**: Recommended place for additional documentation such as design notes, process guides, and architecture details.
+- **`reports/`**: Recommended location for HTML reports, logs, and CI artifacts generated during test execution.
+- **`src/`**: Recommended location for reusable automation modules, API clients, or shared library code.
 
-- **`Simple_Grocery_Store_Data/`**: Stores test data and API responses
-  - JSON files contain API response data for test verification
-  - Text files store IDs and tokens for test dependencies
-  - Files are generated during test execution
+### Current Implementation Summary
+
+- `tests/`: Includes pytest test files for carts, orders, products, status checks, and client registration.
+- `Simple_Grocery_Store_Data/`: Contains sample JSON payloads, saved API responses, and runtime artifacts used across the suite.
+- `utilities/`: Includes the project logger used for consistent test output and troubleshooting.
 
 ## 🚀 Setup and Installation
 
