@@ -45,13 +45,12 @@ test_results/
 allure-results/
 allure-report/
 htmlcov/
-Simple_Grocery_Store_Data/*
-.txt
-.json
 
 # Test data (keep structure but not actual data)
 Simple_Grocery_Store_Data/*.json
 !Simple_Grocery_Store_Data/.gitkeep
+*.txt
+*.json
 
 # pytest cache
 .pytest_cache/
