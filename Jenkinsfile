@@ -21,12 +21,12 @@ pipeline {
                 echo 'Creating virtual environment & installing dependencies...'
                 bat """
                     if not exist %VENV_DIR% (
-                        python -m venv %VENV_DIR%
-                    )
-
-                    %PYTHON% -m pip install --upgrade pip
-                    %PYTHON% -m pip install -r requirements.txt
-                """
+                    py -3.11 -m venv %VENV_DIR%
+                )
+                
+                %PYTHON% -m pip install --upgrade pip setuptools wheel
+                %PYTHON% -m pip install -r requirements.txt
+            """
             }
         }
 
