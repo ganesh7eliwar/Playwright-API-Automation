@@ -57,7 +57,7 @@ pipeline {
                 echo '🧪 Running E2E tests...'
                 bat """
                     call %VENV_DIR%\\Scripts\\activate.bat
-                    %PYTEST_CMD% --alluredir=allure-results
+                    %PYTEST_CMD% --alluredir=allure_reports
                 """
             }
 
@@ -71,7 +71,7 @@ pipeline {
         stage('Publish Allure Report') {
             steps {
                 echo '📊 Publishing Allure report...'
-                allure includeProperties: false, results: [[path: 'allure-results']]
+                allure includeProperties: false, results: [[path: 'allure_reports']]
             }
         }
     }
