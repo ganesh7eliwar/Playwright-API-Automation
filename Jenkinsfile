@@ -18,15 +18,13 @@ pipeline {
 
         stage('Setup Python Environment') {
             steps {
-                echo 'Creating virtual environment & installing dependencies...'
+                echo 'Creating fresh virtual environment & installing dependencies...'
                 bat """
-                    if not exist %VENV_DIR% (
-                    py -3.11 -m venv %VENV_DIR%
-                )
-                
-                %PYTHON% -m pip install --upgrade pip setuptools wheel
-                %PYTHON% -m pip install -r requirements.txt
-            """
+                    if exist %VENV_DIR% rmdir /s /q %VENV_DIR%
+                    py -3.11 -m venv %VENV_DIR
+                    %PYTHON% -m pip install --upgrade pip setuptools wheel
+                    %PYTHON% -m pip install -r requirements.txt
+                """
             }
         }
 
