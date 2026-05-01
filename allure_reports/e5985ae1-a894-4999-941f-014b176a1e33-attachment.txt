@@ -1,0 +1,9 @@
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:22 Starting test: test_modify_item_in_cart - Modifying quantity of an item in the cart.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:25 Reading cart ID from file.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:31 Reading cart items from file.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:37 Selecting random item from cart to modify.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:42 Preparing payload with new quantity value.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:50 Cart has items, proceeding with modification.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:52 Making PATCH request to modify item quantity.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:56 Asserting that modify item endpoint returned 204 No Content.
+[32mINFO    [0m <module>:test_modify_item_in_cart.py:58 ✓ Test completed successfully: Item quantity modified.

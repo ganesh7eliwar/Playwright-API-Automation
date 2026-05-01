@@ -1,0 +1,7 @@
+[32mINFO    [0m <module>:test_get_all_orders.py:24 Starting test: test_get_all_orders - Retrieving all orders for authenticated client.
+[32mINFO    [0m <module>:test_get_all_orders.py:27 Reading access token from file.
+[32mINFO    [0m <module>:test_get_all_orders.py:32 Making GET request to retrieve all orders.
+[32mINFO    [0m <module>:test_get_all_orders.py:36 Asserting that get all orders endpoint returned 200 OK.
+[32mINFO    [0m <module>:test_get_all_orders.py:40 Parsing response from get all orders endpoint.
+[32mINFO    [0m <module>:test_get_all_orders.py:45 Saving all orders to JSON file for debugging and reuse.
+[32mINFO    [0m <module>:test_get_all_orders.py:49 ✓ Test completed successfully: All orders retrieved.

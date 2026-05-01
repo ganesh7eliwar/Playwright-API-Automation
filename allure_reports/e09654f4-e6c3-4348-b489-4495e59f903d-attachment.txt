@@ -1,0 +1,11 @@
+[32mINFO    [0m <module>:test_create_new_cart.py:20 Starting test: test_create_new_cart - Creating a new shopping cart.
+[32mINFO    [0m <module>:test_create_new_cart.py:23 Making POST request to /carts endpoint to create new cart.
+[32mINFO    [0m <module>:test_create_new_cart.py:27 Parsing response from /carts endpoint.
+[32mINFO    [0m <module>:test_create_new_cart.py:31 Asserting that the /carts endpoint returned 201 Created.
+[32mINFO    [0m <module>:test_create_new_cart.py:35 Asserting that response is a JSON object.
+[32mINFO    [0m <module>:test_create_new_cart.py:39 Asserting that response contains required cart fields.
+[32mINFO    [0m <module>:test_create_new_cart.py:44 Performing type checks on cart fields.
+[32mINFO    [0m <module>:test_create_new_cart.py:49 Asserting that cart was successfully created.
+[32mINFO    [0m <module>:test_create_new_cart.py:53 Saving cart details to JSON file for debugging and reuse.
+[32mINFO    [0m <module>:test_create_new_cart.py:58 Saving cartId to text file for quick access by other tests.
+[32mINFO    [0m <module>:test_create_new_cart.py:62 ✓ Test completed successfully: New shopping cart created.

@@ -1,0 +1,10 @@
+[32mINFO    [0m <module>:test_create_a_new_order.py:30 Starting test: test_create_a_new_order - Creating a new order from cart.
+[32mINFO    [0m <module>:test_create_a_new_order.py:33 Reading cart ID from file.
+[32mINFO    [0m <module>:test_create_a_new_order.py:38 Reading access token from file.
+[32mINFO    [0m <module>:test_create_a_new_order.py:42 Reading client details from file.
+[32mINFO    [0m <module>:test_create_a_new_order.py:48 Preparing order payload.
+[32mINFO    [0m <module>:test_create_a_new_order.py:53 Making POST request to create new order.
+[32mINFO    [0m <module>:test_create_a_new_order.py:60 Asserting that create order endpoint returned 201 Created.
+[32mINFO    [0m <module>:test_create_a_new_order.py:64 Parsing response from create order endpoint.
+[32mINFO    [0m <module>:test_create_a_new_order.py:68 Saving order details to JSON file for debugging and reuse.
+[32mINFO    [0m <module>:test_create_a_new_order.py:72 ✓ Test completed successfully: New order created.

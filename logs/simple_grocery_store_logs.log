@@ -897,3 +897,109 @@
 2026-04-29 14:42:06,427 | INFO | test_get_all_orders | 40 | Parsing response from get all orders endpoint.
 2026-04-29 14:42:06,445 | INFO | test_get_all_orders | 45 | Saving all orders to JSON file for debugging and reuse.
 2026-04-29 14:42:06,447 | INFO | test_get_all_orders | 49 | ✓ Test completed successfully: All orders retrieved.
+2026-05-01 13:23:04,112 | INFO | test_get_status | 20 | Starting test: test_get_status - Checking API health status.
+2026-05-01 13:23:04,123 | INFO | test_get_status | 22 | Making GET request to /status endpoint.
+2026-05-01 13:23:05,036 | INFO | test_get_status | 25 | Parsing response from /status endpoint.
+2026-05-01 13:23:05,048 | INFO | test_get_status | 29 | Asserting that the /status endpoint returned 200 OK.
+2026-05-01 13:23:05,048 | INFO | test_get_status | 32 | Asserting that the API status is UP.
+2026-05-01 13:23:05,049 | INFO | test_get_status | 35 | Asserting that the response status code is 200.
+2026-05-01 13:23:05,051 | INFO | test_get_status | 39 | Saving API status response to a JSON file for debugging.
+2026-05-01 13:23:05,055 | INFO | test_get_status | 43 | ✓ Test completed successfully: API status is UP.
+2026-05-01 13:23:05,072 | INFO | test_create_new_cart | 20 | Starting test: test_create_new_cart - Creating a new shopping cart.
+2026-05-01 13:23:05,073 | INFO | test_create_new_cart | 23 | Making POST request to /carts endpoint to create new cart.
+2026-05-01 13:23:05,819 | INFO | test_create_new_cart | 27 | Parsing response from /carts endpoint.
+2026-05-01 13:23:05,830 | INFO | test_create_new_cart | 31 | Asserting that the /carts endpoint returned 201 Created.
+2026-05-01 13:23:05,832 | INFO | test_create_new_cart | 35 | Asserting that response is a JSON object.
+2026-05-01 13:23:05,833 | INFO | test_create_new_cart | 39 | Asserting that response contains required cart fields.
+2026-05-01 13:23:05,837 | INFO | test_create_new_cart | 44 | Performing type checks on cart fields.
+2026-05-01 13:23:05,839 | INFO | test_create_new_cart | 49 | Asserting that cart was successfully created.
+2026-05-01 13:23:05,845 | INFO | test_create_new_cart | 53 | Saving cart details to JSON file for debugging and reuse.
+2026-05-01 13:23:05,852 | INFO | test_create_new_cart | 58 | Saving cartId to text file for quick access by other tests.
+2026-05-01 13:23:05,857 | INFO | test_create_new_cart | 62 | ✓ Test completed successfully: New shopping cart created.
+2026-05-01 13:23:05,876 | INFO | test_add_item_to_cart | 21 | Starting test: test_add_item_to_cart - Adding an item to the shopping cart.
+2026-05-01 13:23:05,882 | INFO | test_add_item_to_cart | 24 | Loading product list from test data file.
+2026-05-01 13:23:05,884 | INFO | test_add_item_to_cart | 29 | Asserting that product list is not empty.
+2026-05-01 13:23:05,885 | INFO | test_add_item_to_cart | 33 | Selecting random product from available products.
+2026-05-01 13:23:05,888 | INFO | test_add_item_to_cart | 38 | Preparing payload with selected product ID.
+2026-05-01 13:23:05,889 | INFO | test_add_item_to_cart | 44 | Reading cart ID from file.
+2026-05-01 13:23:05,890 | INFO | test_add_item_to_cart | 49 | Asserting that cart ID is present.
+2026-05-01 13:23:05,902 | INFO | test_add_item_to_cart | 54 | Making POST request to add item to cart.
+2026-05-01 13:23:06,669 | INFO | test_add_item_to_cart | 58 | Parsing response from add item to cart endpoint.
+2026-05-01 13:23:06,680 | INFO | test_add_item_to_cart | 62 | Asserting that add item endpoint returned 201 Created.
+2026-05-01 13:23:06,698 | INFO | test_add_item_to_cart | 66 | Asserting that response contains required fields.
+2026-05-01 13:23:06,706 | INFO | test_add_item_to_cart | 71 | Asserting that response is a JSON object.
+2026-05-01 13:23:06,712 | INFO | test_add_item_to_cart | 75 | Performing type checks on response fields.
+2026-05-01 13:23:06,713 | INFO | test_add_item_to_cart | 81 | Saving added item details to JSON file for debugging and reuse.
+2026-05-01 13:23:06,716 | INFO | test_add_item_to_cart | 85 | ✓ Test completed successfully: Item added to cart.
+2026-05-01 13:23:06,776 | INFO | test_get_cart_items | 21 | Starting test: test_get_cart_items - Retrieving all items from the shopping cart.
+2026-05-01 13:23:06,778 | INFO | test_get_cart_items | 24 | Reading cart ID from file.
+2026-05-01 13:23:06,780 | INFO | test_get_cart_items | 30 | Making GET request to retrieve cart items.
+2026-05-01 13:23:07,534 | INFO | test_get_cart_items | 34 | Asserting that get cart items endpoint returned 200 OK.
+2026-05-01 13:23:07,535 | INFO | test_get_cart_items | 38 | Parsing response from get cart items endpoint.
+2026-05-01 13:23:07,551 | INFO | test_get_cart_items | 42 | Asserting that response is a list of items.
+2026-05-01 13:23:07,552 | INFO | test_get_cart_items | 48 | Cart contains items, validating item structure.
+2026-05-01 13:23:07,558 | INFO | test_get_cart_items | 53 | Asserting that items contain required fields.
+2026-05-01 13:23:07,558 | INFO | test_get_cart_items | 58 | Performing type checks on item fields.
+2026-05-01 13:23:07,558 | INFO | test_get_cart_items | 65 | Saving cart items to JSON file for debugging and reuse.
+2026-05-01 13:23:07,611 | INFO | test_get_cart_items | 69 | ✓ Test completed successfully: Cart items retrieved.
+2026-05-01 13:23:07,645 | INFO | test_modify_item_in_cart | 22 | Starting test: test_modify_item_in_cart - Modifying quantity of an item in the cart.
+2026-05-01 13:23:07,648 | INFO | test_modify_item_in_cart | 25 | Reading cart ID from file.
+2026-05-01 13:23:07,648 | INFO | test_modify_item_in_cart | 31 | Reading cart items from file.
+2026-05-01 13:23:07,650 | INFO | test_modify_item_in_cart | 37 | Selecting random item from cart to modify.
+2026-05-01 13:23:07,650 | INFO | test_modify_item_in_cart | 42 | Preparing payload with new quantity value.
+2026-05-01 13:23:07,656 | INFO | test_modify_item_in_cart | 50 | Cart has items, proceeding with modification.
+2026-05-01 13:23:07,656 | INFO | test_modify_item_in_cart | 52 | Making PATCH request to modify item quantity.
+2026-05-01 13:23:08,434 | INFO | test_modify_item_in_cart | 56 | Asserting that modify item endpoint returned 204 No Content.
+2026-05-01 13:23:08,437 | INFO | test_modify_item_in_cart | 58 | ✓ Test completed successfully: Item quantity modified.
+2026-05-01 13:23:08,459 | INFO | test_replace_item_in_cart | 22 | Starting test: test_replace_item_in_cart - Replacing an item in the cart with a new product.
+2026-05-01 13:23:08,475 | INFO | test_replace_item_in_cart | 24 | Reading cart ID from file.
+2026-05-01 13:23:08,475 | INFO | test_replace_item_in_cart | 29 | Reading cart items from file.
+2026-05-01 13:23:08,480 | INFO | test_replace_item_in_cart | 33 | Selecting random item from cart to replace.
+2026-05-01 13:23:08,492 | INFO | test_replace_item_in_cart | 36 | Extracting product IDs of items currently in the cart.
+2026-05-01 13:23:08,499 | INFO | test_replace_item_in_cart | 40 | Loading product list from test data file and filtering for in-stock products.
+2026-05-01 13:23:08,512 | INFO | test_replace_item_in_cart | 44 | Extracting product IDs of in-stock products.
+2026-05-01 13:23:08,517 | INFO | test_replace_item_in_cart | 48 | Removing products already in the cart from the list of available products.
+2026-05-01 13:23:08,519 | INFO | test_replace_item_in_cart | 54 | Selecting a random product ID from the available products to replace the item in the cart.
+2026-05-01 13:23:08,519 | INFO | test_replace_item_in_cart | 58 | Preparing payload with new product ID and random quantity.
+2026-05-01 13:23:08,522 | INFO | test_replace_item_in_cart | 62 | Checking if cart has items before attempting to replace an item.
+2026-05-01 13:23:08,522 | INFO | test_replace_item_in_cart | 65 | Making PUT request to replace the item in the cart.
+2026-05-01 13:23:09,304 | INFO | test_replace_item_in_cart | 69 | Asserting that replace item endpoint returned 204 No Content.
+2026-05-01 13:23:09,305 | INFO | test_replace_item_in_cart | 71 | ✓ Test completed successfully: Item replaced in cart.
+2026-05-01 13:23:09,319 | INFO | test_register_a_new_client | 52 | Starting test: test_register_a_new_client - Registering a new API client and generating access token.
+2026-05-01 13:23:09,337 | INFO | test_register_a_new_client | 58 | Generating random client credentials using Faker.
+2026-05-01 13:23:09,374 | INFO | test_register_a_new_client | 66 | Making POST request to /api-clients endpoint to register new client.
+2026-05-01 13:23:10,156 | INFO | test_register_a_new_client | 70 | Asserting that the /api-clients endpoint returned 201 Created.
+2026-05-01 13:23:10,157 | INFO | test_register_a_new_client | 74 | Parsing response to extract access token.
+2026-05-01 13:23:10,169 | INFO | test_register_a_new_client | 78 | Saving access token to file for reuse in other tests.
+2026-05-01 13:23:10,173 | INFO | test_register_a_new_client | 83 | Saving client details to file for debugging and reuse.
+2026-05-01 13:23:10,177 | INFO | test_register_a_new_client | 88 | Asserting that access token is present in response.
+2026-05-01 13:23:10,179 | INFO | test_register_a_new_client | 90 | Asserting that access token is a dictionary.
+2026-05-01 13:23:10,180 | INFO | test_register_a_new_client | 94 | Combining client details and access token into single dictionary.
+2026-05-01 13:23:10,180 | INFO | test_register_a_new_client | 103 | Loading existing client details from file.
+2026-05-01 13:23:10,185 | INFO | test_register_a_new_client | 118 | Appending new client to existing client details.
+2026-05-01 13:23:10,190 | INFO | test_register_a_new_client | 122 | Saving updated client details to file.
+2026-05-01 13:23:10,194 | INFO | test_register_a_new_client | 126 | ✓ Test completed successfully: New API client registered and access token generated.
+2026-05-01 13:23:10,223 | INFO | test_create_a_new_order | 30 | Starting test: test_create_a_new_order - Creating a new order from cart.
+2026-05-01 13:23:10,229 | INFO | test_create_a_new_order | 33 | Reading cart ID from file.
+2026-05-01 13:23:10,231 | INFO | test_create_a_new_order | 38 | Reading access token from file.
+2026-05-01 13:23:10,238 | INFO | test_create_a_new_order | 42 | Reading client details from file.
+2026-05-01 13:23:10,240 | INFO | test_create_a_new_order | 48 | Preparing order payload.
+2026-05-01 13:23:10,242 | INFO | test_create_a_new_order | 53 | Making POST request to create new order.
+2026-05-01 13:23:11,068 | INFO | test_create_a_new_order | 60 | Asserting that create order endpoint returned 201 Created.
+2026-05-01 13:23:11,069 | INFO | test_create_a_new_order | 64 | Parsing response from create order endpoint.
+2026-05-01 13:23:11,071 | INFO | test_create_a_new_order | 68 | Saving order details to JSON file for debugging and reuse.
+2026-05-01 13:23:11,083 | INFO | test_create_a_new_order | 72 | ✓ Test completed successfully: New order created.
+2026-05-01 13:23:11,108 | INFO | test_update_an_order | 33 | Starting test: test_update_an_order - Updating an existing order.
+2026-05-01 13:23:11,151 | INFO | test_update_an_order | 36 | Reading access token from file.
+2026-05-01 13:23:11,158 | INFO | test_update_an_order | 41 | Reading order details from file.
+2026-05-01 13:23:11,160 | INFO | test_update_an_order | 49 | Preparing update payload.
+2026-05-01 13:23:11,160 | INFO | test_update_an_order | 54 | Making PATCH request to update order.
+2026-05-01 13:23:11,912 | INFO | test_update_an_order | 61 | Asserting that update order endpoint returned 204 No Content.
+2026-05-01 13:23:11,913 | INFO | test_update_an_order | 63 | ✓ Test completed successfully: Order updated.
+2026-05-01 13:23:11,927 | INFO | test_get_all_orders | 24 | Starting test: test_get_all_orders - Retrieving all orders for authenticated client.
+2026-05-01 13:23:11,929 | INFO | test_get_all_orders | 27 | Reading access token from file.
+2026-05-01 13:23:11,930 | INFO | test_get_all_orders | 32 | Making GET request to retrieve all orders.
+2026-05-01 13:23:12,700 | INFO | test_get_all_orders | 36 | Asserting that get all orders endpoint returned 200 OK.
+2026-05-01 13:23:12,700 | INFO | test_get_all_orders | 40 | Parsing response from get all orders endpoint.
+2026-05-01 13:23:12,718 | INFO | test_get_all_orders | 45 | Saving all orders to JSON file for debugging and reuse.
+2026-05-01 13:23:12,738 | INFO | test_get_all_orders | 49 | ✓ Test completed successfully: All orders retrieved.

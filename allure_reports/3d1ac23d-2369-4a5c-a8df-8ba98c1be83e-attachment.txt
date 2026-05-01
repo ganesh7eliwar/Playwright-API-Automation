@@ -1,0 +1,8 @@
+[32mINFO    [0m <module>:test_get_status.py:20 Starting test: test_get_status - Checking API health status.
+[32mINFO    [0m <module>:test_get_status.py:22 Making GET request to /status endpoint.
+[32mINFO    [0m <module>:test_get_status.py:25 Parsing response from /status endpoint.
+[32mINFO    [0m <module>:test_get_status.py:29 Asserting that the /status endpoint returned 200 OK.
+[32mINFO    [0m <module>:test_get_status.py:32 Asserting that the API status is UP.
+[32mINFO    [0m <module>:test_get_status.py:35 Asserting that the response status code is 200.
+[32mINFO    [0m <module>:test_get_status.py:39 Saving API status response to a JSON file for debugging.
+[32mINFO    [0m <module>:test_get_status.py:43 ✓ Test completed successfully: API status is UP.

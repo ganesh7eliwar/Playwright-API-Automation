@@ -1,0 +1,14 @@
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:22 Starting test: test_replace_item_in_cart - Replacing an item in the cart with a new product.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:24 Reading cart ID from file.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:29 Reading cart items from file.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:33 Selecting random item from cart to replace.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:36 Extracting product IDs of items currently in the cart.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:40 Loading product list from test data file and filtering for in-stock products.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:44 Extracting product IDs of in-stock products.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:48 Removing products already in the cart from the list of available products.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:54 Selecting a random product ID from the available products to replace the item in the cart.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:58 Preparing payload with new product ID and random quantity.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:62 Checking if cart has items before attempting to replace an item.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:65 Making PUT request to replace the item in the cart.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:69 Asserting that replace item endpoint returned 204 No Content.
+[32mINFO    [0m <module>:test_replace_item_from_cart.py:71 ✓ Test completed successfully: Item replaced in cart.

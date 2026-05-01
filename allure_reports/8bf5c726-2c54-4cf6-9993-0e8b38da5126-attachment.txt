@@ -1,0 +1,7 @@
+[32mINFO    [0m <module>:test_update_an_order.py:33 Starting test: test_update_an_order - Updating an existing order.
+[32mINFO    [0m <module>:test_update_an_order.py:36 Reading access token from file.
+[32mINFO    [0m <module>:test_update_an_order.py:41 Reading order details from file.
+[32mINFO    [0m <module>:test_update_an_order.py:49 Preparing update payload.
+[32mINFO    [0m <module>:test_update_an_order.py:54 Making PATCH request to update order.
+[32mINFO    [0m <module>:test_update_an_order.py:61 Asserting that update order endpoint returned 204 No Content.
+[32mINFO    [0m <module>:test_update_an_order.py:63 ✓ Test completed successfully: Order updated.

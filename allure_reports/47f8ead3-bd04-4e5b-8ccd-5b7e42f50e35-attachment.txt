@@ -1,0 +1,11 @@
+[32mINFO    [0m <module>:test_get_cart_items.py:21 Starting test: test_get_cart_items - Retrieving all items from the shopping cart.
+[32mINFO    [0m <module>:test_get_cart_items.py:24 Reading cart ID from file.
+[32mINFO    [0m <module>:test_get_cart_items.py:30 Making GET request to retrieve cart items.
+[32mINFO    [0m <module>:test_get_cart_items.py:34 Asserting that get cart items endpoint returned 200 OK.
+[32mINFO    [0m <module>:test_get_cart_items.py:38 Parsing response from get cart items endpoint.
+[32mINFO    [0m <module>:test_get_cart_items.py:42 Asserting that response is a list of items.
+[32mINFO    [0m <module>:test_get_cart_items.py:48 Cart contains items, validating item structure.
+[32mINFO    [0m <module>:test_get_cart_items.py:53 Asserting that items contain required fields.
+[32mINFO    [0m <module>:test_get_cart_items.py:58 Performing type checks on item fields.
+[32mINFO    [0m <module>:test_get_cart_items.py:65 Saving cart items to JSON file for debugging and reuse.
+[32mINFO    [0m <module>:test_get_cart_items.py:69 ✓ Test completed successfully: Cart items retrieved.

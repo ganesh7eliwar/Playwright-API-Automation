@@ -1,0 +1,15 @@
+[32mINFO    [0m <module>:test_add_item_to_cart.py:21 Starting test: test_add_item_to_cart - Adding an item to the shopping cart.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:24 Loading product list from test data file.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:29 Asserting that product list is not empty.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:33 Selecting random product from available products.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:38 Preparing payload with selected product ID.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:44 Reading cart ID from file.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:49 Asserting that cart ID is present.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:54 Making POST request to add item to cart.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:58 Parsing response from add item to cart endpoint.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:62 Asserting that add item endpoint returned 201 Created.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:66 Asserting that response contains required fields.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:71 Asserting that response is a JSON object.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:75 Performing type checks on response fields.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:81 Saving added item details to JSON file for debugging and reuse.
+[32mINFO    [0m <module>:test_add_item_to_cart.py:85 ✓ Test completed successfully: Item added to cart.

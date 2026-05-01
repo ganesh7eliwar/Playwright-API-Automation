@@ -1,0 +1,14 @@
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:52 Starting test: test_register_a_new_client - Registering a new API client and generating access token.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:58 Generating random client credentials using Faker.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:66 Making POST request to /api-clients endpoint to register new client.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:70 Asserting that the /api-clients endpoint returned 201 Created.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:74 Parsing response to extract access token.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:78 Saving access token to file for reuse in other tests.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:83 Saving client details to file for debugging and reuse.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:88 Asserting that access token is present in response.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:90 Asserting that access token is a dictionary.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:94 Combining client details and access token into single dictionary.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:103 Loading existing client details from file.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:118 Appending new client to existing client details.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:122 Saving updated client details to file.
+[32mINFO    [0m <module>:test_register_a_new_api_client.py:126 ✓ Test completed successfully: New API client registered and access token generated.
