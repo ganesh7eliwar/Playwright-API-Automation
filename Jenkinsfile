@@ -18,13 +18,16 @@ pipeline {
 
         stage('Setup Python Environment') {
             steps {
-                echo 'Creating fresh virtual environment & installing dependencies...'
+                echo 'Setting up Python virtual environment (with caching)...'
                 bat """
-                    if exist %VENV_DIR% rmdir /s /q %VENV_DIR%
-                    python --version
-                    python -m venv %VENV_DIR%
-                    %PYTHON% -m pip install --upgrade pip setuptools wheel
-                    %PYTHON% -m pip install -r requirements.txt
+                    IF NOT EXIST %VENV_DIR% (
+                        echo Creating virtual environment for first time...
+                        // py -3 -m venv %VENV_DIR%
+                        %PYTHON% -m pip install --upgrade pip setuptools wheel
+                        %PYTHON% -m pip install -r requirements.txt
+                    ) ELSE (
+                        echo Virtual environment already exists. Skipping dependency installation.
+                    )
                 """
             }
         }
