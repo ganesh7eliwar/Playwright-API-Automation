@@ -21,7 +21,7 @@ pipeline {
                     python -m venv ${VENV_DIR}
                     call ${VENV_DIR}\\Scripts\\activate.bat
                     python -m pip install --upgrade pip
-                    pip install -r requirements_updated.txt
+                    pip install -r requirements.txt
                 """
             }
         }
@@ -30,7 +30,7 @@ pipeline {
             steps {
                 bat """
                     call ${VENV_DIR}\\Scripts\\activate.bat
-                    pip install -r requirements_updated.txt
+                    pip install -r requirements.txt
                 """
             }
         }
